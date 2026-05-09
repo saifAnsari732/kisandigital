@@ -64,7 +64,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               {isDarkMode ? <HiSun className="text-primary-light text-2xl" /> : <HiMoon className="text-primary-light text-2xl" />}
             </button>
 
-            <Button  variant="primary" className="px-6 py-2.5 text-lg uppercase tracking-wider font-bold rounded-full">
+            <Button onClick={() => window.location.href = "#pricing"}  variant="primary" className="px-6 py-2.5 text-lg uppercase tracking-wider font-bold rounded-full">
               Get Started
             </Button>
           </div>

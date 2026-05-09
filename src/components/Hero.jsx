@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaWhatsapp } from 'react-icons/fa';
 import Button from './UI/Button';
+import { Link } from 'react-router-dom';
 
 const brands = [
   'KisanChoice', 'Tejomarg', 'Anadiwan', 'Vaibhav', 'Aarohi', 'KisanKart', 'Shreeji'
@@ -59,9 +60,9 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-wrap justify-center gap-6 mb-20"
           >
-            <Button className="px-10 py-5 text-lg uppercase tracking-widest font-black rounded-2xl shadow-2xl shadow-primary/30 hover:scale-105 transition-all">
+            <Link to="/contact" className="px-10 py-5 border-2 border-[var(--border-color)] text-lg uppercase tracking-widest font-black rounded-2xl shadow-2xl shadow-primary/30 hover:scale-105 transition-all">
               Get Started Now
-            </Button>
+            </Link>
             <button 
               onClick={handleWhatsApp}
               className="flex items-center gap-3 px-10 py-5 text-lg uppercase tracking-widest font-black bg-[#123FA8] text-white rounded-2xl hoverbg-[#2B67C7] transition-all shadow-2xl border border-white/10"
