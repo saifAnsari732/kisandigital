@@ -26,17 +26,23 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link
           to="/"
-          className="flex items-center gap-2 group cursor-pointer"
+          className="flex items-center gap-4 group cursor-pointer"
         >
           <div className="relative">
-            <div className="w-9 h-9 bg-primary rounded-lg flex items-center justify-center text-white shadow-lg group-hover:rotate-12 transition-transform duration-300">
-              <span className="text-xl font-black">K</span>
+            <div className="w-11 h-11 bg-primary rounded-xl flex items-center justify-center text-white shadow-2xl group-hover:rotate-12 transition-all duration-500 border border-white/10">
+              <span className="text-2xl font-black italic">K</span>
             </div>
-            <div className="absolute -inset-1 bg-primary/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="absolute -inset-2 bg-primary/25 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </div>
-          <span className="text-2xl font-bold tracking-tight font-heading">
-            Kisan <span className="text-primary-light">Digital</span>
-          </span>
+          
+          <div className="flex flex-col">
+            <span className="text-2xl font-bold tracking-tight font-heading leading-tight">
+              Kisan<span className="text-primary-light">Digital</span>
+            </span>
+            <span className="text-[10px] uppercase tracking-[0.2em] font-black text-primary-light/80">
+              Digital Excellence
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Menu */}
