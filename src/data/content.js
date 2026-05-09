@@ -84,47 +84,71 @@ export const stats = [
 
 export const portfolio = [
   {
-    id: "ecommerce-redesign",
-    title: "E-commerce Redesign",
-    category: "Web Development",
+    id: "real-estate-leads",
+    title: "Real Estate Lead Generation",
+    category: "Performance Marketing",
     image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop",
     description:
-      "A complete overhaul of a legacy e-commerce platform. We implemented a modern React frontend, optimized page load speeds by 60%, and integrated a seamless checkout experience that resulted in a 35% increase in conversion rates.",
+      "Generated high-quality property buyer leads for a local real estate company through Meta and Google Ads campaigns. Reduced lead cost by 42% while increasing monthly inquiries and site visits within just 90 days.",
     link: "#",
   },
+
   {
-    id: "organic-skincare-seo",
-    title: "Organic Skincare SEO",
+    id: "school-admission-campaign",
+    title: "School Admission Campaign",
+    category: "Social Media Marketing",
+    image:
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop",
+    description:
+      "Created a full-funnel admission marketing strategy for a private school using Facebook, Instagram, and WhatsApp campaigns. Helped increase admission inquiries during the new session season with highly targeted local promotions.",
+    link: "#",
+  },
+
+  {
+    id: "tejomarg-website",
+    title: "Tejomarg Website Development",
+    category: "Web Design & Development",
+    image:
+      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=800&auto=format&fit=crop",
+    description:
+      "Designed and developed a modern, fast-loading business website with premium UI/UX, responsive layouts, and SEO-friendly architecture. The platform improved brand visibility and customer engagement across devices.",
+    link: "#",
+  },
+
+  {
+    id: "gym-client-growth",
+    title: "Gym Membership Growth Campaign",
+    category: "Meta Ads",
+    image:
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop",
+    description:
+      "Executed location-based Instagram and Facebook ad campaigns for a fitness center. Generated consistent membership inquiries using reels ads, transformation creatives, and limited-time offer funnels.",
+    link: "#",
+  },
+
+  {
+    id: "seo-services-ranking",
+    title: "SEO Ranking Improvement",
     category: "SEO Optimization",
     image:
-      "https://images.unsplash.com/photo-1557838923-2985c318be48?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?q=80&w=800&auto=format&fit=crop",
     description:
-      "Our team performed an extensive keyword research and on-page optimization for a growing skincare brand. Within 6 months, organic traffic grew by 200%, and several high-intent keywords reached the top 3 results on Google.",
+      "Improved search engine rankings for multiple local business keywords through technical SEO, content optimization, and backlink strategies. Increased organic website traffic and local visibility significantly.",
     link: "#",
   },
+
   {
-    id: "tech-startup-branding",
-    title: "Tech Startup Branding",
-    category: "Branding",
+    id: "ecommerce-growth",
+    title: "E-commerce Sales Scaling",
+    category: "E-commerce Marketing",
     image:
-      "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=800&auto=format&fit=crop",
     description:
-      "Developed a comprehensive brand identity for a silicon valley fintech startup. This included logo design, color palette selection, typography, and a full brand guidelines document to ensure consistency across all platforms.",
-    link: "#",
-  },
-  {
-    id: "fitness-app-meta-ads",
-    title: "Fitness App Meta Ads",
-    category: "Social Media Ads",
-    image:
-      "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=800&auto=format&fit=crop",
-    description:
-      "Ran a highly targeted Meta ads campaign for a fitness app. By leveraging lookalike audiences and A/B testing creative assets, we achieved a $0.50 cost per install and acquired over 50,000 new users in 3 months.",
+      "Built high-converting product campaigns for an online store using Meta Ads and retargeting funnels. Helped increase ROAS, recover abandoned carts, and boost repeat customer purchases.",
     link: "#",
   },
 ];
-
 export const process = [
   {
     step: "01",

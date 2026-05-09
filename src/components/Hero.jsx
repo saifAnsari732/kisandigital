@@ -3,9 +3,8 @@ import { FaWhatsapp } from 'react-icons/fa';
 import Button from './UI/Button';
 import { Link } from 'react-router-dom';
 
-const brands = [
-  'KisanChoice', 'Tejomarg', 'Anadiwan', 'Vaibhav', 'Aarohi', 'KisanKart', 'Shreeji'
-];
+
+
 
 const Hero = () => {
   const handleWhatsApp = () => {
@@ -20,7 +19,7 @@ const Hero = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[150px] animate-float" />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto text-center lg:mt-5 sm:mt-6 mt-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -31,7 +30,7 @@ const Hero = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-light opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-light"></span>
             </span>
-            <span className="text-[10px] uppercase tracking-[0.3em] font-black opacity-80">Top Rated Digital Agency in Lucknow</span>
+            <span className="text-[10px]  uppercase tracking-[0.3em] font-black opacity-80">Top Rated Digital Agency in Lucknow</span>
           </motion.div>
 
           <motion.h1
@@ -50,8 +49,8 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl lg:text-2xl opacity-60 mb-12 max-w-2xl mx-auto leading-relaxed"
           >
-            Customer nahi aa rahe? Hum laake denge. <br />
-            Data-driven strategies for high-quality leads and sales.
+More reach. More leads. More revenue. <br />
+Performance-focused marketing solutions designed to scale your business.
           </motion.p>
 
           <motion.div
@@ -73,21 +72,8 @@ const Hero = () => {
           </motion.div>
 
           {/* Subtle Social Proof */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1 }}
-            className="pt-10 border-t border-[var(--border-color)]"
-          >
-            <p className="text-[13px] uppercase tracking-[0.5em] font-bold opacity-100 mb-8">Trusted By Industry Leaders</p>
-            <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 grayscale opacity-30">
-              {brands.map((brand) => (
-                <span key={brand} className="text-xl text-[#123FA8] italic opacity-100 tracking-tighter hover:grayscale-0 hover:opacity-100 transition-all cursor-default">
-                  {brand}
-                </span>
-              ))}
-            </div>
-          </motion.div>
+        
+        
         </div>
       </div>
       

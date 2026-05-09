@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView, useSpring, useTransform } from "framer-motion";
 import { HiUsers, HiCube, HiBriefcase, HiChartBar } from "react-icons/hi";
-import Button from "./UI/Button";
+// import Button from "./UI/Button";
 import { Link } from "react-router-dom";
 
 const Counter = ({ value, suffix = "" }) => {
@@ -66,7 +66,7 @@ const Stats = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-black tracking-tight mb-4">
             Why Businesses{" "}
-            <span className="text-primary-light">Trust Kisan Digital</span>
+            <span className="text-primary-light">Trust KisanDigital</span>
           </h2>
           <p className="opacity-50 max-w-2xl mx-auto font-medium">
             Numbers that speak for our success — from digital solutions to

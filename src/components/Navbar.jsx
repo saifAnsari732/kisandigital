@@ -19,30 +19,26 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 z-50 ${
-        isScrolled ? 'py-3 bg-bg-color/80 backdrop-blur-xl shadow-2xl border-b border-[var(--border-color)]' : 'py-6 bg-transparent'
+      className={`fixed top-0 left-0  w-full z-50 transition-all duration-500 z-50 ${
+        isScrolled ? ' bg-bg-color/80 backdrop-blur-xl shadow-2xl border-b border-[var(--border-color)]' : 'py-6 bg-transparent'
       }`}
     >
-      <div className="container mx-auto px-6 flex justify-between items-center">
+      <div className="container mx-auto h-25 px-6 flex justify-between items-center">
         <Link
           to="/"
           className="flex items-center gap-4 group cursor-pointer"
         >
           <div className="relative">
-            <div className="w-11 h-11 bg-primary rounded-xl flex items-center justify-center text-white shadow-2xl group-hover:rotate-12 transition-all duration-500 border border-white/10">
-              <span className="text-2xl font-black italic">K</span>
-            </div>
+           
+
             <div className="absolute -inset-2 bg-primary/25 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </div>
           
-          <div className="flex flex-col">
-            <span className="text-2xl font-bold tracking-tight font-heading leading-tight">
-              Kisan<span className="text-primary-light">Digital</span>
-            </span>
-            <span className="text-[10px] uppercase tracking-[0.2em] font-black text-primary-light/80">
-              Digital Excellence
-            </span>
+          <div className=''>  
+             <img src="/10.webp" className='h-90'  alt="" />
           </div>
+   
+          
         </Link>
 
         {/* Desktop Menu */}
@@ -60,7 +56,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             ))}
           </div>
           
-          <div className="h-6 w-[1px] bg-[var(--border-color)] mx-2" />
+          {/* <div className="h-6  bg-[var(--border-color)] " /> */}
 
           <div className="flex items-center gap-4">
             <button
@@ -70,8 +66,8 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               {isDarkMode ? <HiSun className="text-primary-light  text-3xl" /> : <HiMoon className="text-primary-light text-3xl" />}
             </button>
 
-            <Button onClick={() => window.location.href = "#pricing"}  variant="primary" className="px-6 py-2.5 text-lg uppercase tracking-wider font-bold rounded-full">
-              Get Started
+            <Button onClick={() => window.location.href = "#pricing"}  variant="primary" className=" font-bold w-full">
+                          Get_Started
             </Button>
           </div>
         </div>

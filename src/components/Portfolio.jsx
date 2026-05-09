@@ -26,9 +26,7 @@ const Portfolio = () => {
               Crafting Digital <br /> <span className="text-primary-light italic">Excellence</span>
             </motion.h2>
           </div>
-          <button className="text-primary-light font-black uppercase tracking-widest text-xs flex items-center gap-3 group hover:tracking-[0.2em] transition-all duration-500">
-            View All Projects <HiExternalLink className="text-xl group-hover:rotate-12 transition-transform" />
-          </button>
+        
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -54,12 +52,12 @@ const Portfolio = () => {
               
               <div className="absolute bottom-0 left-0 p-10 lg:p-14 w-full">
                 <div className="overflow-hidden">
-                  <p className="text-primary-light font-black text-[10px] uppercase tracking-[0.3em] mb-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                  <p className="text-white font-black text-[10px] uppercase tracking-[0.3em] mb-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                     {project.category}
                   </p>
                 </div>
                 <div className="overflow-hidden">
-                  <h3 className="text-3xl lg:text-4xl font-black tracking-tight text-white mb-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 delay-100">
+                  <h3 className="text-3xl lg:text-4xl font-black tracking-tight text-white mb-6 transform translate-y- group-hover:translate-y-0 transition-transform duration-500 delay-100">
                     {project.title}
                   </h3>
                 </div>
