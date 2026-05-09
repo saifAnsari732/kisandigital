@@ -1,0 +1,10 @@
+/* App specific styles can be added here */
+.hero-text-shadow {
+  text-shadow: 0 0 50px rgba(18, 63, 168, 0.3);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #4CA6F3, #2B67C7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
