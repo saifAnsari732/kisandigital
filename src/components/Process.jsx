@@ -33,7 +33,7 @@ const Process = () => {
               </p>
               
               {/* Decorative Number background */}
-              <span className="absolute -top-4 -right-4 text-6xl font-black opacity-5 pointer-events-none group-hover:text-primary-light/10 transition-colors">
+              <span className="absolute -top-4 -right-4 text-5xl font-black opacity-10 pointer-events-none group-hover:text-primary-light/10 transition-colors">
                 {item.step}
               </span>
             </motion.div>
