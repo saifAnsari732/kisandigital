@@ -19,7 +19,7 @@ const Contact = () => {
     const { name, email, service, message } = formData;
     
     // Construct WhatsApp message
-    const waNumber = "919315555367"; 
+    const waNumber = "919905234866"; 
     const text = `Hello Kisan Digital!%0A%0A*New Inquiry*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Service:* ${service}%0A*Message:* ${message}`;
     
     window.open(`https://wa.me/${waNumber}?text=${text}`, '_blank');
@@ -58,7 +58,7 @@ const Contact = () => {
             <div className="space-y-12">
               {[
                 { icon: <HiMail />, label: 'Email us', value: 'hello@kisandigital.com' },
-                { icon: <HiPhone />, label: 'Call us', value: '+91 93155 55367' },
+                { icon: <HiPhone />, label: 'Call us', value: '+91 99052 34866' },
                 { icon: <HiLocationMarker />, label: 'Our Office', value: 'Lucknow, Uttar Pradesh, India' },
               ].map((item, index) => (
                 <div key={index} className="flex gap-8 items-center group">

@@ -70,7 +70,7 @@ const Footer = () => {
             <h4 className="text-[10px] uppercase tracking-[0.5em] font-black opacity-50 mb-10">Contact Info</h4>
             <ul className="space-y-6 opacity-60">
               <li className="font-bold text-sm uppercase tracking-widest">Lucknow, Uttar Pradesh, India</li>
-              <li className="font-bold text-sm uppercase tracking-widest">+91 93155 55367</li>
+              <li className="font-bold text-sm uppercase tracking-widest">+91 99052 34866</li>
               <li className="font-bold text-sm uppercase tracking-widest">hello@kisandigital.com</li>
             </ul>
             <div className="mt-12 p-8 rounded-[2rem] glass border border-[var(--border-color)] backdrop-blur-3xl shadow-2xl">
