@@ -17,7 +17,7 @@ const Loading = () => {
           className="text-4xl font-bold flex items-center gap-3 mb-4"
         >
           <span className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white shadow-[0_0_30px_rgba(16,185,129,0.5)]">K</span>
-          <span className="tracking-tighter">Kisan <span className="text-primary">Digital</span></span>
+          <span className="tracking-tighter text-white">Kisan <span className="text-primary">Digital</span></span>
         </motion.div>
         
         <div className="w-48 h-1 bg-white/10 rounded-full overflow-hidden mx-auto">

@@ -69,11 +69,11 @@ const ProjectDetail = () => {
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-6">
-              <Link to="/contact" className="px-10 py-5 cursor-pointer glass bg-accent rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white/10 transition-colors">
+            {/* <div className="flex flex-wrap gap-6 "> */}
+              <Link to="/contact" className="px-10 py-5 cursor-pointer text-white bg-accent rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white/10 transition-colors ">
                 Start a Project
               </Link>
-            </div>
+            {/* </div> */}
           </motion.div>
 
           <motion.div

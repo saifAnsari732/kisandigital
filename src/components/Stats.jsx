@@ -25,21 +25,21 @@ const Counter = ({ value, suffix = "" }) => {
 const stats = [
   {
     label: "Happy Customers",
-    value: 5000,
+    value: 1000,
     suffix: "+",
     icon: <HiUsers />,
     color: "text-green-500",
   },
   {
     label: "Software Sold",
-    value: 3000,
+    value: 500,
     suffix: "+",
     icon: <HiCube />,
     color: "text-blue-500",
   },
   {
     label: "Resellers",
-    value: 500,
+    value: 300,
     suffix: "+",
     icon: <HiBriefcase />,
     color: "text-purple-500",
@@ -47,7 +47,7 @@ const stats = [
   {
     label: "Client Revenue Generated",
     value: 10,
-    suffix: "L+",
+    suffix: "K+",
     icon: <HiChartBar />,
     color: "text-yellow-500",
   },

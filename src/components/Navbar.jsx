@@ -65,9 +65,9 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           <div className="flex items-center gap-4">
             <button
               onClick={() => setIsDarkMode(!isDarkMode)}
-              className="w-10 h-10 rounded-full flex items-center justify-center glass hover:bg-primary/10 transition-colors border border-[var(--border-color)]"
+              className="w-15 h-13 cursor-pointer rounded-full flex items-center justify-center glass hover:bg-primary/10 transition-colors border border-[var(--border-color)]"
             >
-              {isDarkMode ? <HiSun className="text-primary-light text-2xl" /> : <HiMoon className="text-primary-light text-2xl" />}
+              {isDarkMode ? <HiSun className="text-primary-light  text-3xl" /> : <HiMoon className="text-primary-light text-3xl" />}
             </button>
 
             <Button onClick={() => window.location.href = "#pricing"}  variant="primary" className="px-6 py-2.5 text-lg uppercase tracking-wider font-bold rounded-full">

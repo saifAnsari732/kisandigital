@@ -65,7 +65,7 @@ const Hero = () => {
             </Link>
             <button 
               onClick={handleWhatsApp}
-              className="flex items-center gap-3 px-10 py-5 text-lg uppercase tracking-widest font-black bg-[#123FA8] text-white rounded-2xl hoverbg-[#2B67C7] transition-all shadow-2xl border border-white/10"
+              className="flex items-center gap-3 cursor-pointer px-10 py-5 text-lg uppercase tracking-widest font-black bg-[#123FA8] text-white rounded-2xl hoverbg-[#2B67C7] transition-all shadow-2xl border border-white/10"
             >
               <FaWhatsapp className="text-2xl text-green-500" />
               WhatsApp
@@ -82,7 +82,7 @@ const Hero = () => {
             <p className="text-[13px] uppercase tracking-[0.5em] font-bold opacity-100 mb-8">Trusted By Industry Leaders</p>
             <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 grayscale opacity-30">
               {brands.map((brand) => (
-                <span key={brand} className="text-xl font-black italic tracking-tighter hover:grayscale-0 hover:opacity-100 transition-all cursor-default">
+                <span key={brand} className="text-xl text-[#123FA8] italic opacity-100 tracking-tighter hover:grayscale-0 hover:opacity-100 transition-all cursor-default">
                   {brand}
                 </span>
               ))}

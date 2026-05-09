@@ -11,7 +11,7 @@ import Contact from './components/Contact';
 import ProjectDetail from './pages/ProjectDetail';
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const location = useLocation();
 
   useEffect(() => {

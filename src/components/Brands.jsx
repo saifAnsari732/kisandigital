@@ -34,7 +34,7 @@ const Brands = () => {
   return (
     <section className="py-20 bg-bg-color relative z-10 overflow-hidden border-t border-[var(--border-color)]">
       <div className="container mx-auto px-6 mb-12 text-center">
-        <p className="text-[10px] uppercase tracking-[0.5em] font-black opacity-30">Global Partnerships</p>
+        <p className="text-[10px] uppercase tracking-[0.5em] font-black opacity-100">Global Partnerships</p>
       </div>
       
       <div className="flex overflow-hidden relative group">
@@ -53,7 +53,7 @@ const Brands = () => {
           {[...brands, ...brands, ...brands].map((brand, index) => (
             <div
               key={index}
-              className="flex items-center gap-4 text-4xl font-black opacity-20 hover:opacity-100 hover:text-primary-light transition-all duration-500 cursor-default select-none group/item"
+              className="flex items-center gap-4 text-4xl  font-black opacity-60 hover:opacity-100 text-primary-light transition-all duration-500 cursor-default select-none group/item"
             >
               <brand.icon className="text-5xl group-hover/item:scale-110 transition-transform" />
               <span className="font-heading italic uppercase tracking-tighter">{brand.name}</span>

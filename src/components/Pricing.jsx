@@ -69,7 +69,7 @@ const Pricing = () => {
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.9, y: 20 }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
-                className={`relative p-10 lg:p-12 rounded-[3.5rem] border transition-all duration-500 flex flex-col ${
+                className={`relative p-10 lg:p-10 rounded-[3.5rem] border transition-all duration-500 flex flex-col ${
                   plan.isPopular 
                   ? 'bg-primary/5 border-primary-light shadow-[0_40px_100px_rgba(18,63,168,0.15)] z-10' 
                   : 'glass border-[var(--border-color)] hover:border-primary-light/30'
@@ -104,7 +104,7 @@ const Pricing = () => {
 
                 <Button 
                   variant={plan.isPopular ? 'primary' : 'outline'} 
-                  className={`w-full py-5 text-[15px] uppercase tracking-[0.3em] font-black rounded-2xl ${plan.isPopular ? 'shadow-2xl shadow-primary/20 hover:scale-[1.02]' : 'hover:bg-primary/10'}`}
+                  className={`w-full py-5 text-[15px] uppercase tracking-[0.3em] font-black rounded-2xl ${plan.isPopular ? 'shadow-2xl shadow-primary/20 hover:scale-[1.02]' : 'hover:bg-primary/50'}`}
                   onClick={() => handlePricingAction(plan)}
                 >
                   Select Plan
