@@ -35,7 +35,9 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           </div>
           
           <div className=''>  
-             <img src="/10.webp" className='h-90'  alt="" />
+            {!isDarkMode &&<img src="/10.webp" className='h-96'  alt="" />
+            }
+            {isDarkMode && <img src="/12.png" className='h-18'  alt="" />}
           </div>
    
           

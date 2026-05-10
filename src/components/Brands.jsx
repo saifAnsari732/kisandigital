@@ -8,10 +8,12 @@ const brands = [
   {
     name: 'Tejomarg',
     image: '/3.png',
+    url:"https://tejomarg.com/"
   },
   {
     name: 'KisanChoice',
     image: '/4.png',
+    url: "https://www.kisangroups.co.in/"
   },
   {
     name: 'News 24',
@@ -49,6 +51,7 @@ const Brands = () => {
               key={index}
               className="flex items-center justify-center shrink-0"
             >
+              <a href={brand.url} target="_blank" rel="noopener noreferrer">
               <img
                 src={brand.image}
                 alt={brand.name}
@@ -66,6 +69,7 @@ const Brands = () => {
                   hover:scale-105
                 "
               />
+              </a>
             </div>
           ))}
         </motion.div>
