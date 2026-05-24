@@ -13,7 +13,7 @@ const Pricing = () => {
 
   const handlePricingAction = (plan) => {
     const message = `Hi Kisan Digital, I'm interested in the ${plan.name} plan (${plan.price}) under ${plan.category}. Please provide more details.`;
-    const whatsappUrl = `https://wa.me/919905234866?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/919511150925?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

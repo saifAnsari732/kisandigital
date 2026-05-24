@@ -52,7 +52,7 @@ const stats = [
     color: "text-yellow-500",
   },
 ];
- const whatsappNumber = "919905234866";
+ const whatsappNumber = "919511150925";
   const message = "Hi Kisan Digital, I'm interested in your services!";
 
   const handleClick = () => {

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsAppButton = () => {
-  const whatsappNumber = "919905234866";
+  const whatsappNumber = "919511150925";
   const message = "Hi Kisan Digital, I'm interested in your services!";
 
   const handleClick = () => {

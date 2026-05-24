@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const handleWhatsApp = () => {
-    window.open("https://wa.me/919905234866?text=Hi, I want to grow my business with Kisan Digital!", "_blank");
+    window.open("https://wa.me/919511150925?text=Hi, I want to grow my business with Kisan Digital!", "_blank");
   };
 
   return (
