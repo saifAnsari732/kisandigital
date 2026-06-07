@@ -20,28 +20,55 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   const getNavbarBg = () => {
     if (isDarkMode) {
       if (isOpen) {
-        return 'bg-dark-bg border-b border-white/5 py-4';
+        return 'bg-dark-bg border-b border-white/5';
       }
       if (isScrolled) {
-        return 'bg-dark-bg/90 backdrop-blur-xl shadow-2xl border-b border-white/5 py-4';
+        return 'bg-dark-bg/90 backdrop-blur-xl shadow-2xl border-b border-white/5';
       }
-      return 'bg-transparent py-6';
+      return 'bg-transparent';
     } else {
       // Light Mode - Pure White, No Blue transparency bleeding
       if (isOpen) {
-        return 'bg-white border-b border-gray-100 py-4 text-gray-900';
+        return 'bg-white border-b border-gray-100 text-gray-900';
       }
       if (isScrolled) {
-        return 'bg-white border-b border-gray-100 shadow-md py-4 text-gray-900';
+        return 'bg-white border-b border-gray-100 shadow-md text-gray-900';
       }
       // Top mobile must be solid white or slightly translucent (not transparent) to avoid mesh gradient overlay
-      return 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 py-4 lg:bg-transparent lg:shadow-none lg:border-none lg:py-6 text-gray-900';
+      return 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 lg:bg-transparent lg:shadow-none lg:border-none text-gray-900';
+    }
+  };
+
+  const getPadding = () => {
+    if (isDarkMode) {
+      if (isOpen) return 'py-4';
+      if (isScrolled) return 'py-4';
+      return 'py-6';
+    } else {
+      if (isOpen) return 'py-4';
+      if (isScrolled) return 'py-4';
+      return 'py-4 lg:py-6';
     }
   };
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${getNavbarBg()}`}>
-      <div className="container mx-auto h-10 lg:h-20 px-6 flex justify-between items-center">
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-1000 flex flex-col ${getNavbarBg()}`}>
+      {/* Marquee Banner */}
+      <div className="w-full bg-gradient-to-r from-blue-950 to-blue-800 text-white text-[10px] sm:text-xs py-2 marquee-container border-b border-white/10">
+        <div className="marquee-content font-bold tracking-[0.2em] uppercase">
+          {[...Array(4)].flatMap((_, i) => 
+            ["Website Development", "App Development", "WordPress Development", "E-Commerce Website", "Product Listing", "Digital Marketing", "Social Media Ads", "SEO Optimization", "Graphic Design"].map((service, j) => (
+              <span key={`${i}-${j}`} className="mx-6 flex items-center gap-6 whitespace-nowrap">
+                {service}
+                <span className="w-1.5 h-1.5 rounded-full bg-white/50"></span>
+              </span>
+            ))
+          )}
+        </div>
+      </div>
+
+      <div className={`w-full transition-all duration-500 ${getPadding()}`}>
+        <div className="container mx-auto h-8 lg:h-15 px-6 flex justify-between items-center">
         <Link
           to="/"
           className="flex items-center gap-3 group cursor-pointer"
@@ -110,6 +137,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             {isOpen ? <HiX /> : <HiMenuAlt3 />}
           </button>
         </div>
+      </div>
       </div>
 
       {/* Mobile Dropdown Menu */}
