@@ -9,6 +9,8 @@ import Portfolio from './components/Portfolio';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import ProjectDetail from './pages/ProjectDetail';
+import CustomCursor from './components/CustomCursor';
+import ParticleNetwork from './components/ParticleNetwork';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -42,6 +44,8 @@ function App() {
 
   return (
     <div className="min-h-screen selection:bg-primary selection:text-white transition-colors duration-300 bg-bg-color text-text-color">
+      <ParticleNetwork />
+      <CustomCursor />
       <Loading />
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <main>

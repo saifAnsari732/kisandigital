@@ -18,28 +18,28 @@ const Hero = () => {
       <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[100px] animate-pulse" style={{ animationDelay: '1s' }} />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[150px] animate-float" />
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-7xl mx-auto text-center lg:mt-5 sm:mt-6 mt-6">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="max-w-7xl mx-auto text-center lg:mt-5 sm:mt-6 mt-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-5 py-2 rounded-full glass border-[var(--border-color)] mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border-[var(--border-color)] mb-6 max-w-full"
           >
-            <span className="relative flex h-2 w-2">
+            <span className="relative flex h-2 w-2 flex-shrink-0">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-light opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-light"></span>
             </span>
-            <span className="text-[10px]  uppercase tracking-[0.3em] font-black opacity-80">Top Rated Digital Agency in Lucknow</span>
+            <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.12em] sm:tracking-[0.3em] font-black opacity-80 truncate">Top Rated Digital Agency in Lucknow</span>
           </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-6xl md:text-8xl lg:text-[100px] font-black leading-[1.1] tracking-tighter mb-10 hero-text-shadow px-4"
+            className="text-4xl sm:text-6xl md:text-8xl lg:text-[100px] font-black leading-[1.15] tracking-tighter mb-8 hero-text-shadow px-2"
           >
-            Scale Your Brand with <br />
+            Scale Your Brand with <br className="hidden sm:inline" />
             <span className="text-brand-gradient">Premium Digital Services</span>
           </motion.h1>
 
@@ -47,26 +47,26 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl lg:text-2xl opacity-60 mb-12 max-w-2xl mx-auto leading-relaxed"
+            className="text-sm sm:text-lg lg:text-2xl opacity-60 mb-10 max-w-2xl mx-auto leading-relaxed px-4"
           >
-More reach. More leads. More revenue. <br />
-Performance-focused marketing solutions designed to scale your business.
+            More reach. More leads. More revenue. <br />
+            Performance-focused marketing solutions designed to scale your business.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-wrap justify-center gap-6 mb-20"
+            className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 mb-12"
           >
-            <Link to="/contact" className="px-10 py-5 border-2 border-[var(--border-color)] text-lg uppercase tracking-widest font-black rounded-2xl shadow-2xl shadow-primary/30 hover:scale-105 transition-all">
+            <Link to="/contact" className="w-full sm:w-auto px-8 py-4 sm:px-10 sm:py-5 border-2 border-[var(--border-color)] text-sm sm:text-lg uppercase tracking-widest font-black rounded-2xl shadow-2xl shadow-primary/30 hover:scale-105 transition-all text-center">
               Get Started Now
             </Link>
             <button 
               onClick={handleWhatsApp}
-              className="flex items-center gap-3 cursor-pointer px-10 py-5 text-lg uppercase tracking-widest font-black bg-[#123FA8] text-white rounded-2xl hoverbg-[#2B67C7] transition-all shadow-2xl border border-white/10"
+              className="w-full sm:w-auto flex items-center justify-center gap-3 cursor-pointer px-8 py-4 sm:px-10 sm:py-5 text-sm sm:text-lg uppercase tracking-widest font-black bg-[#123FA8] text-white rounded-2xl hover:bg-[#2B67C7] transition-all shadow-2xl border border-white/10"
             >
-              <FaWhatsapp className="text-2xl text-green-500" />
+              <FaWhatsapp className="text-xl sm:text-2xl text-green-500" />
               WhatsApp
             </button>
           </motion.div>
@@ -80,6 +80,30 @@ Performance-focused marketing solutions designed to scale your business.
       {/* Professional Decorative Elements */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 border border-[var(--border-color)] rounded-full -translate-x-1/2 opacity-20" />
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-96 h-96 border border-[var(--border-color)] rounded-full translate-x-1/2 opacity-20 animate-slow-spin" />
+      
+      {/* Scroll Down Indicator */}
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 1 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+      >
+        <div className="w-[30px] h-[50px] rounded-full border-2 border-white/20 dark:border-white/20 flex justify-center p-1.5 shadow-xl glass">
+          <motion.div
+            animate={{
+              y: [0, 16, 0],
+              opacity: [1, 0, 1]
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+            className="w-1.5 h-3 bg-primary-light rounded-full"
+          />
+        </div>
+        <span className="text-[10px] uppercase tracking-[0.3em] font-black opacity-40 text-[var(--text-color)]">Scroll</span>
+      </motion.div>
     </section>
   );
 };
