@@ -49,16 +49,7 @@ const CustomCursor = () => {
   // Note: we use CSS media query (hidden lg:block) to hide on small screens
   return (
     <>
-      {/* Main Cursor Dot */}
-      <motion.div
-        className={`fixed top-0 left-0 w-3 h-3 bg-white rounded-full pointer-events-none z-[9999] hidden lg:block mix-blend-difference shadow-[0_0_10px_rgba(255,255,255,0.5)] ${isVisible ? 'opacity-100' : 'opacity-0'}`}
-        animate={{
-          x: mousePosition.x - 6,
-          y: mousePosition.y - 6,
-          scale: isHovering ? 2.5 : 1,
-        }}
-        transition={{ type: 'tween', ease: 'backOut', duration: 0.15 }}
-      />
+
       {/* Trailing Ring */}
       <motion.div
         className={`fixed top-0 left-0 w-12 h-12 border border-primary-light rounded-full pointer-events-none z-[9998] hidden lg:block transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
