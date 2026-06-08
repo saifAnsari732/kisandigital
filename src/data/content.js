@@ -232,7 +232,7 @@ export const pricing = [
   {
     category: "Web Packages",
     name: "BASIC WEBSITE",
-    price: "₹2,599",
+    price: "₹3999",
     description: "Perfect for local presence.",
     features: [
       "One Page Static Website",
