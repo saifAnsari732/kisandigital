@@ -54,7 +54,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-1000 flex flex-col ${getNavbarBg()}`}>
       {/* Marquee Banner */}
-      <div className="w-full bg-gradient-to-r from-blue-950 to-blue-800 text-white text-[10px] sm:text-xs py-2 marquee-container border-b border-white/10">
+      <div className="w-full bg-gradient-to-r from-blue-500 to-blue-800 text-white text-[10px] sm:text-xs py-2 marquee-container border-b border-white/10">
         <div className="marquee-content font-bold tracking-[0.2em] uppercase">
           {[...Array(4)].flatMap((_, i) => 
             ["Website Development", "App Development", "WordPress Development", "E-Commerce Website", "Product Listing", "Digital Marketing", "Social Media Ads", "SEO Optimization", "Graphic Design"].map((service, j) => (

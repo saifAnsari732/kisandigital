@@ -197,7 +197,13 @@ const Growth = () => {
             </div>
 
             {/* Column 2: Large Visual Asset */}
-            <div className="lg:col-span-6 order-1 lg:order-2">
+            <motion.div 
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+              className="lg:col-span-6 order-1 lg:order-2"
+            >
               <div className="relative group">
                 {/* Visual shadow glow */}
                 <div className="absolute inset-0 bg-primary/20 rounded-[2.5rem] blur-3xl opacity-50 group-hover:opacity-80 transition-opacity pointer-events-none" />
@@ -213,7 +219,7 @@ const Growth = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
         </AnimatePresence>
       </div>

@@ -72,10 +72,10 @@ const Services = () => {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
               className="group p-10 rounded-[3rem] glass border border-[var(--border-color)] hover:border-primary-light/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/5 flex flex-col items-start"
             >
               <div 

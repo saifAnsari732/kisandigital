@@ -33,10 +33,10 @@ const Portfolio = () => {
           {portfolio.map((project, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
               onClick={() => navigate(`/project/${project.id}`)}
               className="group relative rounded-[3rem] overflow-hidden cursor-pointer bg-white/5 border border-white/5 shadow-2xl"
             >
