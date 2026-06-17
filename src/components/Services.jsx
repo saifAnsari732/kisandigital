@@ -9,6 +9,10 @@ import {
   HiUserGroup,
   HiPhotograph,
   HiArrowRight,
+  HiDeviceMobile,
+  HiChip,
+  HiChat,
+  HiTemplate,
 } from "react-icons/hi";
 import { services } from "../data/content";
 
@@ -30,6 +34,14 @@ const iconMap = {
   design: <HiPhotograph />,
   HiPhotograph: "bg-red-500",
   HiArrowRight: "bg-red-500",
+  app: <HiDeviceMobile />,
+  HiDeviceMobile: "bg-blue-500",
+  ai: <HiChip />,
+  HiChip: "bg-purple-500",
+  whatsapp: <HiChat />,
+  HiChat: "bg-green-500",
+  wordpress: <HiTemplate />,
+  HiTemplate: "bg-blue-500",
 };
 
 const Services = () => {

@@ -73,6 +73,34 @@ export const services = [
     icon: "design",
     color: "#F97316", // Orange
   },
+  {
+    title: "App Development",
+    description:
+      "High-performance iOS and Android applications with stunning UI/UX design to engage your mobile users.",
+    icon: "app",
+    color: "#3B82F6", // Blue
+  },
+  {
+    title: "AI Automation",
+    description:
+      "Smart AI agents and workflow automation to save time and scale your business operations 24/7.",
+    icon: "ai",
+    color: "#8B5CF6", // Violet
+  },
+  {
+    title: "WhatsApp & Integrations",
+    description:
+      "Seamless WhatsApp API and WordPress integrations to boost customer engagement and sales.",
+    icon: "whatsapp",
+    color: "#10B981", // Emerald
+  },
+  {
+    title: "WordPress Development",
+    description:
+      "Custom, easy-to-manage WordPress websites tailored exactly to your brand's unique needs.",
+    icon: "wordpress",
+    color: "#0EA5E9", // Light Blue
+  },
 ];
 
 export const stats = [
@@ -481,6 +509,107 @@ export const pricing = [
       "Photo Optimization",
       "Hours & Info Setup",
       "Basic Post Creation",
+    ],
+    isPopular: false,
+  },
+
+  // App Development
+  {
+    category: "App Development",
+    name: "BASIC APP",
+    price: "₹34,999",
+    description: "Android & iOS presence.",
+    features: [
+      "Android & iOS Apps (Flutter/React Native)",
+      "Standard UI/UX Design",
+      "User Authentication",
+      "Push Notifications",
+      "Basic Admin Panel",
+      "App Store & Play Store Submission",
+      "3 Months Free Support",
+    ],
+    isPopular: false,
+  },
+  {
+    category: "App Development",
+    name: "E-COMMERCE APP",
+    price: "₹59,999",
+    description: "Sell products on mobile.",
+    features: [
+      "Android & iOS E-Commerce App",
+      "Premium Custom UI/UX",
+      "Payment Gateway Integration",
+      "Cart & Order Management",
+      "Wishlist & Reviews",
+      "Advanced Admin Dashboard",
+      "App Store & Play Store Submission",
+      "6 Months Free Support",
+    ],
+    isPopular: true,
+  },
+
+  // AI Automation
+  {
+    category: "AI Automation",
+    name: "AI CHATBOT",
+    price: "₹14,999",
+    description: "24/7 Customer Support.",
+    features: [
+      "Custom Trained AI Agent",
+      "Website Integration",
+      "WhatsApp Integration",
+      "Lead Capture Setup",
+      "Auto-Replies & FAQs",
+      "Basic Analytics",
+      "1 Month Free Training/Support",
+    ],
+    isPopular: true,
+  },
+  {
+    category: "AI Automation",
+    name: "WORKFLOW AUTOMATION",
+    price: "₹24,999",
+    description: "Automate your business.",
+    features: [
+      "Zapier/Make.com Integrations",
+      "CRM & Email Automation",
+      "Lead Routing Systems",
+      "Invoice/Quote Automation",
+      "Custom API Connections",
+      "Process Consultation",
+      "3 Months Support",
+    ],
+    isPopular: false,
+  },
+
+  // Integrations
+  {
+    category: "Integrations",
+    name: "WHATSAPP API",
+    price: "₹9,999",
+    description: "Automated WhatsApp Marketing.",
+    features: [
+      "Official WhatsApp API Setup",
+      "Green Tick Verification Support",
+      "Bulk Campaign Setup",
+      "Auto-Reply Flows",
+      "E-commerce/Shopify Sync",
+      "Button & List Messages",
+    ],
+    isPopular: true,
+  },
+  {
+    category: "Integrations",
+    name: "WORDPRESS PRO",
+    price: "₹12,999",
+    description: "Custom WP Solutions.",
+    features: [
+      "Custom Theme Development",
+      "Plugin Setup & Configuration",
+      "WooCommerce Integration",
+      "Speed Optimization (90+ Score)",
+      "Advanced Security Setup",
+      "SEO Plugin Configuration",
     ],
     isPopular: false,
   },

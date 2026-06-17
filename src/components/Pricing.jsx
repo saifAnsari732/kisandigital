@@ -4,7 +4,7 @@ import { HiCheckCircle } from 'react-icons/hi';
 import { pricing } from '../data/content';
 import Button from './UI/Button';
 
-const categories = ['Web Packages', 'Google Ads', 'Social Media', 'SEO', 'Google Listing'];
+const categories = ['Web Packages', 'App Development', 'AI Automation', 'Integrations', 'Google Ads', 'Social Media', 'SEO', 'Google Listing'];
 
 const Pricing = () => {
   const [activeCategory, setActiveCategory] = useState('Web Packages');
