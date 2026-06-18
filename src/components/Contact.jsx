@@ -43,7 +43,7 @@ const Contact = () => {
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              className="text-5xl lg:text-8xl font-black tracking-tighter mb-10"
+              className="text-4xl md:text-5xl lg:text-8xl font-black tracking-tighter mb-8 md:mb-10 break-words"
             >
               Let's Scale Your <br /> <span className="text-primary-light italic">Vision</span>
             </motion.h2>
@@ -61,13 +61,13 @@ const Contact = () => {
                 { icon: <HiPhone />, label: 'Call us', value: '+91 95111 50925' },
                 { icon: <HiLocationMarker />, label: 'Our Office', value: 'Lucknow, Uttar Pradesh, India' },
               ].map((item, index) => (
-                <div key={index} className="flex gap-8 items-center group">
-                  <div className="w-16 h-16 rounded-[1.5rem] glass border border-[var(--border-color)] flex items-center justify-center text-3xl text-primary-light group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-xl">
+                <div key={index} className="flex gap-4 sm:gap-8 items-center group">
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 shrink-0 rounded-xl sm:rounded-[1.5rem] glass border border-[var(--border-color)] flex items-center justify-center text-2xl sm:text-3xl text-primary-light group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-xl">
                     {item.icon}
                   </div>
-                  <div>
-                    <p className="text-[10px] uppercase tracking-[0.2em] font-black opacity-30 mb-1">{item.label}</p>
-                    <p className="text-2xl font-bold group-hover:text-primary-light transition-colors tracking-tight">{item.value}</p>
+                  <div className="min-w-0">
+                    <p className="text-[9px] sm:text-[10px] uppercase tracking-[0.2em] font-black opacity-30 mb-1">{item.label}</p>
+                    <p className="text-lg sm:text-2xl font-bold group-hover:text-primary-light transition-colors tracking-tight break-all sm:break-words">{item.value}</p>
                   </div>
                 </div>
               ))}

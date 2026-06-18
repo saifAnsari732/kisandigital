@@ -106,10 +106,10 @@ const Growth = () => {
 
         {/* Tab Switcher - Essential for Mobile Navigation & Interactive UX */}
         <div className="flex justify-center mb-16">
-          <div className="p-1.5 rounded-2xl glass border border-[var(--border-color)] flex gap-2 w-full max-w-md shadow-2xl relative z-10">
+          <div className="p-1.5 rounded-2xl glass border border-[var(--border-color)] flex flex-col sm:flex-row gap-2 w-full max-w-md shadow-2xl relative z-10">
             <button
               onClick={() => setActiveTab("business")}
-              className={`flex-1 py-3.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all duration-300 relative flex items-center justify-center gap-2 cursor-pointer ${
+              className={`flex-1 py-3 sm:py-3.5 rounded-xl text-[10px] sm:text-xs font-black uppercase tracking-wider transition-all duration-300 relative flex items-center justify-center gap-2 cursor-pointer ${
                 activeTab === "business" ? "text-white" : "text-[var(--text-color)] opacity-70 hover:opacity-100"
               }`}
             >
@@ -120,11 +120,11 @@ const Growth = () => {
                   transition={{ type: "spring", stiffness: 380, damping: 30 }}
                 />
               )}
-              <HiChartBar className="text-base" /> Marketing Growth
+              <HiChartBar className="text-base shrink-0" /> <span className="break-words">Marketing Growth</span>
             </button>
             <button
               onClick={() => setActiveTab("tech")}
-              className={`flex-1 py-3.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all duration-300 relative flex items-center justify-center gap-2 cursor-pointer ${
+              className={`flex-1 py-3 sm:py-3.5 rounded-xl text-[10px] sm:text-xs font-black uppercase tracking-wider transition-all duration-300 relative flex items-center justify-center gap-2 cursor-pointer ${
                 activeTab === "tech" ? "text-white" : "text-[var(--text-color)] opacity-70 hover:opacity-100"
               }`}
             >
@@ -135,7 +135,7 @@ const Growth = () => {
                   transition={{ type: "spring", stiffness: 380, damping: 30 }}
                 />
               )}
-              <HiSparkles className="text-base" /> Next-Gen Tech
+              <HiSparkles className="text-base shrink-0" /> <span className="break-words">Next-Gen Tech</span>
             </button>
           </div>
         </div>

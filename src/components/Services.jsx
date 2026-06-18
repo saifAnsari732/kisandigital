@@ -63,7 +63,7 @@ const Services = () => {
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              className="text-5xl lg:text-7xl font-black tracking-tighter"
+              className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter break-words"
             >
               Comprehensive{" "}
               <span className="text-primary-light italic">Digital</span>{" "}

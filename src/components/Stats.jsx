@@ -74,7 +74,7 @@ const Stats = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mb-20">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
@@ -82,19 +82,19 @@ const Stats = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="glass p-10 rounded-[3rem] text-center border border-white/5 hover:border-white/10 transition-all group"
+              className="glass p-6 md:p-10 rounded-[2rem] md:rounded-[3rem] text-center border border-white/5 hover:border-white/10 transition-all group"
             >
               <div
-                className={`w-16 h-16 mx-auto mb-6 rounded-2xl bg-white/5 flex items-center justify-center text-2xl ${stat.color} group-hover:scale-110 transition-transform`}
+                className={`w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6 rounded-xl md:rounded-2xl bg-white/5 flex items-center justify-center text-xl md:text-2xl ${stat.color} group-hover:scale-110 transition-transform`}
               >
                 {stat.icon}
               </div>
               <h3
-                className={`text-4xl lg:text-5xl font-black mb-3 ${stat.color}`}
+                className={`text-3xl md:text-4xl lg:text-5xl font-black mb-2 md:mb-3 ${stat.color}`}
               >
                 <Counter value={stat.value} suffix={stat.suffix} />
               </h3>
-              <p className="text-[10px] uppercase tracking-[0.3em] font-black opacity-40">
+              <p className="text-[9px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] font-black opacity-40">
                 {stat.label}
               </p>
             </motion.div>
