@@ -7,7 +7,7 @@ export const navigation = [
   { name: "FAQ", href: "#faq" },
   { name: "Contact", href: "#contact" },
 ];
-
+// senjgikze
 export const socialLinks = {
   facebook: "https://facebook.com/ikisandigital",
   instagram: "https://instagram.com/kisan.digital9",
