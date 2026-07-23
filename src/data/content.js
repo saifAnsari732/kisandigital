@@ -14,6 +14,7 @@ export const socialLinks = {
   pinterest: "https://pinterest.com/kisan_digital",
   twitter: "https://x.com/ikisan_digital",
   linkedin: "https://linkedin.com/company/kisandigital",
+  youtube: "https://www.youtube.com/@Kisan.digital/",
 };
 
 export const services = [

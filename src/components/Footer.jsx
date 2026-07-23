@@ -1,4 +1,4 @@
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPinterest } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPinterest, FaYoutube } from 'react-icons/fa';
 import { navigation, services, socialLinks } from '../data/content';
 
 const Footer = () => {
@@ -8,6 +8,7 @@ const Footer = () => {
     { Icon: FaInstagram, href: socialLinks.instagram },
     { Icon: FaLinkedin, href: socialLinks.linkedin },
     { Icon: FaPinterest, href: socialLinks.pinterest },
+    { Icon: FaYoutube, href: socialLinks.youtube },
   ];
 
   return (
